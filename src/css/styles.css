@@ -375,27 +375,10 @@ hr {
 cite{
 	position: relative;
 	font-style: oblique;
-	font-size: 30px;
+	font-size: 12px;
 }
 
-cite::after{
-	content: "''";
-	position: absolute;
-	top: 20px;
-	right: -15vw;
-	font-size: 70px;
-	color: var(--dorado);
-	font-weight: bold;
-}
-cite::before{
-	content: "''";
-	position: absolute; 
-	top: 20px;
-	left: -5vw;
-	font-size: 70px;
-	color: var(--dorado);
-	font-weight: bold;
-}
+
 
 /* Formulario */
 
@@ -449,5 +432,27 @@ footer img{
 	/* Testimonial */
 	.testimonial-item .content{
 		width: 60%;
+	}
+	cite::after {
+		content: "''";
+		position: absolute;
+		top: 20px;
+		right: -15vw;
+		font-size: 70px;
+		color: var(--dorado);
+		font-weight: bold;
+	}
+
+	cite::before {
+		content: "''";
+		position: absolute;
+		top: 20px;
+		left: -5vw;
+		font-size: 70px;
+		color: var(--dorado);
+		font-weight: bold;
+	}
+	cite{
+		font-size: 30px;
 	}
 }
