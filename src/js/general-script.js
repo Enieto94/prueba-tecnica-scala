@@ -44,10 +44,10 @@ $(document).ready(function () {
 		var scrollTop = $(window).scrollTop();
 		console.log("Vertical " + scrollTop);
 		if (scrollTop > 100) {
-			$('.menu').css({ "top": "0", "background": "none" });
+			$('.menu').css({ "top": "0", "background": "#000000bc" });
 		}
 		if (scrollTop < 100) {
-			$('.menu').css({ "top": "inherit", "height": "60px", "background": "#000000bc" });
+			$('.menu').css({ "top": "inherit", "height": "60px", "background": "none" });
 		}
 
 	});
