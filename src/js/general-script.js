@@ -40,4 +40,16 @@ $(document).ready(function () {
 		} // End if
 	});
 
+	$(window).scroll(function (event) {
+		var scrollTop = $(window).scrollTop();
+		console.log("Vertical " + scrollTop);
+		if (scrollTop > 100) {
+			$('.menu').css({ "top": "0", "background": "none" });
+		}
+		if (scrollTop < 100) {
+			$('.menu').css({ "top": "inherit", "height": "60px", "background": "#000000bc" });
+		}
+
+	});
+
 });
