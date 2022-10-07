@@ -17,7 +17,7 @@ $(document).ready(function () {
 			}
 		}
 	});
-
+	//  go to section id of anchor clicked
 	$("a").on('click', function (event) {
 
 		// Make sure this.hash has a value before overriding default behavior
@@ -39,7 +39,7 @@ $(document).ready(function () {
 			});
 		} // End if
 	});
-
+	//  Detecta movimiento scroll
 	$(window).scroll(function (event) {
 		var scrollTop = $(window).scrollTop();
 		console.log("Vertical " + scrollTop);
